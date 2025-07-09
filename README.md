@@ -2,6 +2,8 @@
 
 Este proyecto implementa un modelo de inteligencia artificial para traducir texto de inglés a español, utilizando técnicas de Procesamiento del Lenguaje Natural (PLN) y redes neuronales. Además, se incluye una interfaz web para interactuar con el traductor.
 
+https://github.com/user-attachments/assets/5b598300-92b7-4797-a7a9-f5cdbbd3f181
+
 ## Componentes del Proyecto
 
 El proyecto se divide en tres partes principales: la base teórica, la implementación práctica del modelo y una aplicación web para su uso.
