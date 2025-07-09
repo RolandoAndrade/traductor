@@ -1,30 +1,22 @@
-# React + TypeScript + Vite
+# Traductor de Inglés a Español
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto implementa un modelo de inteligencia artificial para traducir texto de inglés a español, utilizando técnicas de Procesamiento del Lenguaje Natural (PLN) y redes neuronales. Además, se incluye una interfaz web para interactuar con el traductor.
 
-Currently, two official plugins are available:
+## Componentes del Proyecto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+El proyecto se divide en tres partes principales: la base teórica, la implementación práctica del modelo y una aplicación web para su uso.
 
-## Expanding the ESLint configuration
+- **`Procesamiento del lenguaje natural.pdf`**: Contiene los conceptos clave sobre PLN, modelos de secuencia a secuencia (Seq2Seq), tokenización, vectorización y la arquitectura de redes neuronales recurrentes (RNN) utilizada para la traducción.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **`Tokenización_y_vectorización.ipynb`**: En este notebook se realiza el preprocesamiento de los datos. Se explica y aplica el proceso de tokenización (dividir el texto en unidades más pequeñas o "tokens") y vectorización (convertir los tokens en vectores numéricos), que son pasos fundamentales para que la red neuronal pueda procesar el texto.
 
-- Configure the top-level `parserOptions` property like this:
+- **`Traductor.ipynb`**: Este notebook contiene el núcleo del proyecto. Aquí se construye, entrena y evalúa el modelo de red neuronal para la traducción de inglés a español. Se detalla la arquitectura del modelo, el proceso de entrenamiento y cómo utilizarlo para realizar nuevas traducciones.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+-   **Aplicación Web (`/src`, `/app`, `/public`)**: Una interfaz de usuario desarrollada con React y Vite que permite interactuar con la IA de traducción.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Autor
+Rolando Andrade
+
+---
+
+Este proyecto es solo con fines educativos.
